@@ -28,12 +28,18 @@ namespace GenericsDemo
 
         public IEnumerator<T> GetEnumerator()
         {
-            throw new NotImplementedException();
+            foreach(var collection in _collections)
+            {
+                foreach(var item in collection)
+                {
+                    yield return item;
+                }
+            }
         }
 
         IEnumerator IEnumerable.GetEnumerator()
         {
-            throw new NotImplementedException();
+            return GetEnumerator();
         }
     }
 }

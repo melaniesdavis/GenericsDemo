@@ -22,7 +22,7 @@ namespace GenericsDemo
 
             var ec = new EnumerableCompositor<int> {list1, list2, set1, array1};
 
-            /*        int numOdd = 0;
+                   int numOdd = 0;
 
                     foreach (var value in ec)
                     {
@@ -32,7 +32,7 @@ namespace GenericsDemo
                       }
                     }
 
-                      int numOdd = ec.Count(x => IsOdd(x));*/
+           //           int numOdd = ec.Count(x => IsOdd(x));
         }
     }
 }
