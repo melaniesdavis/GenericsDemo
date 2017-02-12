@@ -24,7 +24,7 @@ namespace GenericsDemo
 
             int numOdd = EC(list1, list2, set1, array1).Count(x => IsOdd(x));
 
-
+            HashSet<int> set = EC(list1, list2, set1, array1).To<HashSet<int>>();
         }
     }
 }
