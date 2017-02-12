@@ -19,10 +19,10 @@ namespace GenericsDemo
             var list2 = new List<int> { 2, 4, 6, 8, 10 };
             var set1 = new HashSet<int> { 3, 6, 9, 12, 15 };
             var array1 = new[] { 4, 8, 12, 16, 20 };
-            /*        
-                      var ec = new EnumerableCompositor<int> {list1, list2, set1, array1};
 
-                    int numOdd = 0;
+            var ec = new EnumerableCompositor<int> {list1, list2, set1, array1};
+
+            /*        int numOdd = 0;
 
                     foreach (var value in ec)
                     {
